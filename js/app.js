@@ -21,11 +21,11 @@ DE = document.getElementById(`de`);
 console.warn(window.location.href)
 
 if (window.location.href === `https://wedooso.com/` && navigator.language === `de` || window.location.href === `https://wedooso.com/` && navigator.language == `de-de` || window.location.href === `https://wedooso.com/` && navigator.language === `de-ch` || window.location.href === `https://wedooso.com/` && navigator.language === `de-at` || window.location.href === `https://wedooso.com/` && navigator.language === `de-de` || window.location.href === `https://wedooso.com/` && navigator.language === `de-lu` || window.location.href === `https://wedooso.com/` && navigator.language === `de-li`) {
-    window.location.href = `https://wedooso.com/lang/de/`
+    window.location.href = `https://wedooso.com/de/`
 }
 
 if (window.location.href === `https://wedooso.com/` && navigator.browserLanguage === `de` || window.location.href === `https://wedooso.com/` && navigator.browserLanguage === `de-AT` || window.location.href === `https://wedooso.com/` && navigator.browserLanguage === `de-BE` || window.location.href === `https://wedooso.com/` && navigator.browserLanguage === `de-CH` || window.location.href === `https://wedooso.com/` && navigator.browserLanguage === `de-DE` || window.location.href === `https://wedooso.com/` && navigator.browserLanguage === `de-IT` || window.location.href === `https://wedooso.com/` && navigator.browserLanguage === `de-LI` || window.location.href === `https://wedooso.com/` && navigator.browserLanguage === `de-LU`) {
-    window.location.href = `https://wedooso.com/lang/de/`
+    window.location.href = `https://wedooso.com/de/`
 }
       
 hamburger.addEventListener(`click`, () => {
@@ -47,7 +47,7 @@ hamburger.addEventListener(`click`, () => {
     };
 });
 
-if (window.location.href === `https://wedooso.com/` || window.location.href === `https://wedooso.com/lang/de/`) {
+if (window.location.href === `https://wedooso.com/` || window.location.href === `https://wedooso.com/de/`) {
     header.style.backgroundColor = `transparent`;
 } else {
     header.style.backgroundColor = `var(--light)`;
@@ -55,9 +55,9 @@ if (window.location.href === `https://wedooso.com/` || window.location.href === 
 
 document.addEventListener(`scroll`, () => {
     let scroll_position = window.scrollY;
-    if (scroll_position > 250 && window.location.href === `https://wedooso.com/` || scroll_position > 250 && window.location.href === `https://wedooso.com/lang/de/`) {
+    if (scroll_position > 250 && window.location.href === `https://wedooso.com/` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/`) {
         header.style.backgroundColor = `var(--light)`;
-    } else if (scroll_position < 250 && window.location.href === `https://wedooso.com/` || scroll_position < 250 && window.location.href === `https://wedooso.com/lang/de/`) {
+    } else if (scroll_position < 250 && window.location.href === `https://wedooso.com/` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/`) {
         header.style.backgroundColor = `transparent`;
     } else {
         header.style.backgroundColor = `var(--light)`;
@@ -71,7 +71,7 @@ menu_item.forEach((item) => {
     });
 });
 
-if (window.location.href === `https://wedooso.com/lang/de/`) {
+if (window.location.href === `https://wedooso.com/de/`) {
     EN.style.color = `white`;
     DE.style.color = `var(--blue)`;
 } else if (window.location.href === `https://wedooso.com/`) {
@@ -87,9 +87,9 @@ EN.addEventListener(`click`, (e) => {
 });
 
 DE.addEventListener(`click`, (e) => {
-    if (window.location.href === `https://wedooso.com/lang/de/` || window.location.href === `https://wedooso.com/lang/de/blog/social_media_marketing/`) {
+    if (window.location.href === `https://wedooso.com/de/` || window.location.href === `https://wedooso.com/de/blog/social_media_marketing/`) {
         e.preventDefault();
     } else {
-        location.replace(`https://wedooso.com/lang/de/`)
+        location.replace(`https://wedooso.com/de/`)
     }
 });

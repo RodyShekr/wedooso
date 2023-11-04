@@ -9,55 +9,55 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://wedooso.com/public/lang/de</loc>
+        <loc>https://wedooso.com/public/de</loc>
         <lastmod>2023-10-24</lastmod>
         <changefreq>always</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://wedooso.com/public/lang/de/blog</loc>
+        <loc>https://wedooso.com/public/de/blog</loc>
         <lastmod>2023-10-24</lastmod>
         <changefreq>always</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://wedooso.com/public/lang/de/blog/social-media-marketing</loc>
+        <loc>https://wedooso.com/public/de/blog/social-media-marketing</loc>
         <lastmod>2023-10-24</lastmod>
         <changefreq>always</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://wedooso.com/public/lang/de/blog/google-ads</loc>
+        <loc>https://wedooso.com/public/de/blog/google-ads</loc>
         <lastmod>2023-10-24</lastmod>
         <changefreq>always</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://wedooso.com/public/lang/de/blog/seo</loc>
+        <loc>https://wedooso.com/public/de/blog/seo</loc>
         <lastmod>2023-10-24</lastmod>
         <changefreq>always</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://wedooso.com/public/lang/de/blog/facebook-ads-not-performing</loc>
+        <loc>https://wedooso.com/public/de/blog/facebook-ads-not-performing</loc>
         <lastmod>2023-10-24</lastmod>
         <changefreq>always</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://wedooso.com/public/lang/de/blog/facebook-ads-for-ecommerce</loc>
+        <loc>https://wedooso.com/public/de/blog/facebook-ads-for-ecommerce</loc>
         <lastmod>2023-10-24</lastmod>
         <changefreq>always</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://wedooso.com/public/lang/de/blog/google-ads-not-performing</loc>
+        <loc>https://wedooso.com/public/de/blog/google-ads-not-performing</loc>
         <lastmod>2023-10-24</lastmod>
         <changefreq>always</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://wedooso.com/public/lang/de/blog/seo-is-not-working</loc>
+        <loc>https://wedooso.com/public/de/blog/seo-is-not-working</loc>
         <lastmod>2023-10-24</lastmod>
         <changefreq>always</changefreq>
         <priority>0.6</priority>
@@ -117,7 +117,7 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://wedooso.com/public/lang/de/blog/google-ads-ecommerce/</loc>
+        <loc>https://wedooso.com/public/de/blog/google-ads-ecommerce/</loc>
         <lastmod>2023-10-27</lastmod>
         <changefreq>always</changefreq>
         <priority>0.6</priority>
@@ -129,7 +129,7 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://wedooso.com/public/lang/de/blog/seo-ecommerce/</loc>
+        <loc>https://wedooso.com/public/de/blog/seo-ecommerce/</loc>
         <lastmod>2023-11-03</lastmod>
         <changefreq>always</changefreq>
         <priority>0.6</priority>
@@ -141,7 +141,7 @@
         <priority>0.1</priority>
     </url>
         <url>
-        <loc>https://wedooso.com/public/lang/de/impressum</loc>
+        <loc>https://wedooso.com/public/de/impressum</loc>
         <lastmod>2023-10-24</lastmod>
         <changefreq>always</changefreq>
         <priority>0.1</priority>
