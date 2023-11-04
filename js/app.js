@@ -53,9 +53,9 @@ if (window.location.href === `https://wedooso.com` || window.location.href === `
 
 document.addEventListener(`scroll`, () => {
     let scroll_position = window.scrollY;
-    if (scroll_position > 250 && window.location.href === `https://wedooso.com` || window.location.href === `https://wedooso.com/lang/de/`) {
+    if (scroll_position > 250 && window.location.href === `https://wedooso.com` || scroll_position > 250 && window.location.href === `https://wedooso.com/lang/de/`) {
         header.style.backgroundColor = `var(--light)`;
-    } else if (scroll_position < 250 && window.location.href === `https://wedooso.com` || window.location.href === `https://wedooso.com/lang/de/`) {
+    } else if (scroll_position < 250 && window.location.href === `https://wedooso.com` || scroll_position < 250 && window.location.href === `https://wedooso.com/lang/de/`) {
         header.style.backgroundColor = `transparent`;
     } else {
         header.style.backgroundColor = `var(--light)`;
