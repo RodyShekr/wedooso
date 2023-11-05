@@ -72,7 +72,7 @@ p{
 .cta{
     display: inline-block;
     padding: 10px 30px;
-    color: white;
+    color: var(--blue);
     background-color: transparent;
     border: 2px solid var(--blue);
     font-size: 2rem;

@@ -17,9 +17,6 @@ let ul = document.getElementsByTagName(`ul`)[0],
     EN = document.getElementById(`en`),
 DE = document.getElementById(`de`);
 
-
-console.warn(window.location.href)
-
 if (window.location.href === `https://wedooso.com/` && navigator.language === `de` || window.location.href === `https://wedooso.com/` && navigator.language == `de-de` || window.location.href === `https://wedooso.com/` && navigator.language === `de-ch` || window.location.href === `https://wedooso.com/` && navigator.language === `de-at` || window.location.href === `https://wedooso.com/` && navigator.language === `de-de` || window.location.href === `https://wedooso.com/` && navigator.language === `de-lu` || window.location.href === `https://wedooso.com/` && navigator.language === `de-li`) {
     window.location.href = `https://wedooso.com/de/`
 }
