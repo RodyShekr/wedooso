@@ -3,13 +3,17 @@
     --light-blue: #4244ac;
     --light: #80c4c4;
 }
+noscript #googletagmanager {
+    display: none;
+    visibility: hidden
+}
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 html{
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     scroll-behavior: smooth;
 }
@@ -422,7 +426,7 @@ p{
     text-align: left;
 }
 .mid-title {
-    font-size: 25px;
+    font-size: 27px;
     margin: 3rem 0 1rem 0;
 }
 #contact-wedooso-for-more {
@@ -435,7 +439,7 @@ h1.lower-title {
     font-size: 30px;
 }
 .blog-content-section strong {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* End of content  */
@@ -789,7 +793,7 @@ padding-bottom: 2rem;
     text-align: center;
     display: block;
     color: white;
-    font-size: 11px;
+    font-size: 14px;
     margin: 2rem;
 }
 /*End footer*/
@@ -954,7 +958,7 @@ padding-bottom: 2rem;
         flex-direction: row-reverse;
     }
     #services .services-item{
-        height: 500px;
+        height: 550px;
         margin: 0;
         width: 100%;
         border-radius: 0;
@@ -1062,7 +1066,7 @@ padding-bottom: 2rem;
 
 @media only screen and (min-width: 768px) and (max-width:900px) {
     #services .services-item {
-        height: 600px;
+        height: 650px;
     }
     #contact .contact-items {
         flex-wrap: wrap;
