@@ -19,6 +19,8 @@ RewriteRule ^ /%1 [R=301,NE,L]
     ExpiresByType image/jpeg "access plus 1 month"
     ExpiresByType image/gif "access plus 1 month"
     ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg "access plus 1 month"
 </IfModule>
 
 # Delete JavaScript that are more than 1 month in the cache
