@@ -433,7 +433,9 @@ p{
     text-align: center;
     /* margin: 0 5rem; */
 }
-
+b {
+   font-size: 1.75rem; 
+}
 /* Blog Content */
 h1.lower-title {
     font-size: 30px;
