@@ -164,12 +164,12 @@
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
-    <!-- <url>
+    <url>
         <loc>https://wedooso.com/de/blog/does-seo-drive-more-sales/</loc>
         <lastmod>2023-11-26</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
-    </url> -->
+    </url>
     <url>
         <loc>https://wedooso.com/blog/instagram-ads-for-ecommerce/</loc>
         <lastmod>2023-11-25</lastmod>
