@@ -188,8 +188,14 @@
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://wedooso.com/de/blog/seo-checklist-for-ecommerce-sites/</loc>
+  <loc>https://wedooso.com/blog/seo-checklist-for-ecommerce-sites/</loc>
   <lastmod>2023-12-05T18:35:00+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://wedooso.com/de/blog/seo-checklist-for-ecommerce-sites/</loc>
+  <lastmod>2023-12-09T18:00:00+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.51</priority>
 </url>
