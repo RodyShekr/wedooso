@@ -470,6 +470,10 @@ p{
 b {
    font-size: 1.75rem; 
 }
+.blog-content-section ul li{
+    font-size: 1.65rem;
+    margin-left: 3rem;
+}
 /* Blog Content */
 h1.lower-title {
     font-size: 30px;
