@@ -536,6 +536,13 @@ h1.lower-title {
 #services .services-info p{
     color: black;
 }
+#services .services-item .benefits {
+    display: flex;
+    flex-wrap: wrap;
+}
+#services .services-item .benefits h3{
+    margin: 1rem 3rem 1rem 0;
+}
 #services .services-img{
     flex-basis: 50%;
     width: 100%;
@@ -991,14 +998,14 @@ padding-bottom: 2rem;
     /*End Hero*/
 
     /*services*/
-    #services .services-item{
+    #services .services-item {
         flex-direction: row;
     }
     #services .services-item:nth-child(even){
         flex-direction: row-reverse;
     }
-    #services .services-item{
-        height: 600px;
+    #services .services-item {
+        height: 800px;
         margin: 0;
         width: 100%;
         border-radius: 0;
@@ -1103,7 +1110,7 @@ padding-bottom: 2rem;
 
 @media only screen and (min-width: 768px) and (max-width:900px) {
     #services .services-item {
-        height: 650px;
+        height: 850px;
     }
     #contact .contact-items {
         flex-wrap: wrap;
