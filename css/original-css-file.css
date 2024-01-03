@@ -481,7 +481,20 @@ h1.lower-title {
 .blog-content-section strong {
     font-size: 25px;
 }
-
+/* Blog Table */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+th{
+    background-color: #dddddd;
+}
 /* End of content  */
 
 /* services */
