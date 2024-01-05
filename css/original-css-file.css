@@ -473,6 +473,7 @@ b {
 .blog-content-section ul li{
     font-size: 1.37rem;
     margin-left: 3rem;
+    list-style-type: none;
 }
 /* Blog Content */
 h1.lower-title {
