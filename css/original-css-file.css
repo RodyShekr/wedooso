@@ -382,7 +382,7 @@ p{
     margin-top: 100px;
 }
 #content a {
-    color: white;
+    color: var(--light);
     margin: 1rem;
     width: 300px;
 }
@@ -459,6 +459,9 @@ p{
     margin: 4rem 0;
     text-align: left;
 }
+.blog-content-section p a {
+    color: var(--light);  
+}
 .mid-title {
     font-size: 27px;
     margin: 3rem 0 1rem 0;
@@ -470,6 +473,9 @@ p{
 b {
    font-size: 1.75rem; 
 }
+b.just-bold {
+    font-size: 1.37rem; 
+ }
 .blog-content-section ul li{
     font-size: 1.37rem;
     margin-left: 3rem;
