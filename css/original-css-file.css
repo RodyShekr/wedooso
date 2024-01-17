@@ -451,6 +451,20 @@ p{
     width: 100%;
     border-radius: 5px;
 }
+div#table-of-contents {
+    background-color: #edf6ff;
+    padding: 30px 10%;
+    margin: 30px auto;
+    border-radius: 1rem;
+}
+div#table-of-contents a p, .li-table-of-contents a p {
+    color: black;
+    text-align: left;
+}
+.li-table-of-contents p{
+    list-style-type: none;
+    padding-left: 2rem;
+}
 #blog-content {
     text-align: left;
     margin: 0 .5rem;
