@@ -61,6 +61,9 @@ p{
     font-weight: 300;
     letter-spacing: 0.05rem;
 }
+p .contact-us-cognitoforms {
+    text-align: center;
+}
 .title{
     font-size: 3.85rem;
     font-weight: 300;
@@ -462,6 +465,9 @@ div#table-of-contents {
 div#table-of-contents a p, .li-table-of-contents a p {
     color: black;
 }
+div#table-of-contents .one-rem-left {
+    margin-left: 2rem;
+}
 .li-table-of-contents p{
     list-style-type: none;
     padding-left: 2rem;
@@ -475,6 +481,14 @@ div#table-of-contents a p:hover {
 .blog-content-section {
     margin: 4rem 0;
     text-align: left;
+}
+.blog-content-section .blog-video {
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.8rem;
 }
 .blog-content-section p a {
     color: var(--light);  
@@ -1009,6 +1023,9 @@ padding-bottom: 2rem;
     .blog-content-section h2 {
         word-break: break-word;
     }
+    .blog-content-section .blog-video {
+        width: 80%;
+    }
 }
 
 /*Media Query Tablets*/
@@ -1132,6 +1149,9 @@ padding-bottom: 2rem;
     }
     .blog-content-section {
         margin: 3rem;
+    }
+    .blog-content-section .blog-video {
+        width: 35%;
     }
     #contact-wedooso-for-more {
         margin: 0 5rem;
