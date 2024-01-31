@@ -485,7 +485,7 @@ div#table-of-contents a p:hover {
 .blog-content-section .blog-video {
     width: 50%;
     text-align: center;
-    display: block;
+    display: none;
     margin-left: auto;
     margin-right: auto;
     border-radius: 1.8rem;
@@ -1223,6 +1223,9 @@ padding-bottom: 2rem;
     }
     .form-container {
         width: 60%;
+    }
+    .blog-content-section .blog-video {
+        display: block;
     }
 }
 /*End Media Query for Desktop*/
