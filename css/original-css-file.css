@@ -465,9 +465,6 @@ div#table-of-contents {
 div#table-of-contents a p, .li-table-of-contents a p {
     color: black;
 }
-div#table-of-contents .one-rem-left {
-    margin-left: 2rem;
-}
 .li-table-of-contents p{
     list-style-type: none;
     padding-left: 2rem;
