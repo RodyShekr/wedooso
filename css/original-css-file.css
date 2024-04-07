@@ -532,6 +532,18 @@ th{
 }
 /* End of content  */
 
+/* case study */
+#case-study {
+    text-align: center;
+}
+#case-study .content-top {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End case stuy */
+
 /* services */
 #services .services {
     flex-direction: column;
