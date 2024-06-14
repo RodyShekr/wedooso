@@ -117,10 +117,10 @@ document.addEventListener(`scroll`, () => {
         document.getElementById(`fixed-button-en`).style.bottom = `450px`;
     } else if (scroll_position > 250 && window.location.href === `https://wedooso.com/de/` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#hero` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#content` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#ads` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#seo` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#services` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#case-study` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#about`|| scroll_position > 250 && window.location.href === `https://wedooso.com/de/#contact` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#wedooso-contact-form-de`) {
         header.style.backgroundColor = `var(--blue)`;
-        document.getElementById(`fixed-button-en`).style.bottom = `150px`;
+        document.getElementById(`fixed-button-de`).style.bottom = `150px`;
     } else if (scroll_position < 250 && window.location.href === `https://wedooso.com/de/` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#hero` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#content` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#ads` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#seo` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#services` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#case-study` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#about`|| scroll_position < 250 && window.location.href === `https://wedooso.com/de/#contact` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#wedooso-contact-form-de`) {
         header.style.backgroundColor = `transparent`;
-        document.getElementById(`fixed-button-en`).style.bottom = `450px`;
+        document.getElementById(`fixed-button-de`).style.bottom = `450px`;
     } else {
         header.style.backgroundColor = `var(--blue)`;
     }

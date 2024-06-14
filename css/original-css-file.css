@@ -540,14 +540,14 @@ p {
     top: 100px
 }
 
-#fixed-button-de {
+#fixed-button-de, #fixed-button-en {
     position: fixed;
     bottom: 450px;
     right: -20px;
     width: 125px;
     height: 65px;
     z-index: 999;
-    transition: all 1s linear
+    transition: all .5s linear
 }
 
 .button {
