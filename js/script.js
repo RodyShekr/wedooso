@@ -94,10 +94,10 @@ document.addEventListener(`scroll`, () => {
     let scroll_position = window.scrollY;
     if (scroll_position > 250 && window.location.href === `https://wedooso.com/` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/`) {
         header.style.backgroundColor = `var(--blue)`;
-        fixedButtonDE.style.bottom = `650px`;
+        fixedButtonDE.style.bottom = `200px`;
     } else if (scroll_position < 250 && window.location.href === `https://wedooso.com/` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/`) {
         header.style.backgroundColor = `transparent`;
-        fixedButtonDE.style.bottom = `200px`;
+        fixedButtonDE.style.bottom = `650px`;
     } else {
         header.style.backgroundColor = `var(--blue)`;
     }
