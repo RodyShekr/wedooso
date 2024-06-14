@@ -4,7 +4,8 @@ const hamburger = document.querySelector(`.header .nav-bar .nav-list .hamburger`
     mobile_menu = document.querySelector(`.header .nav-bar .nav-list ul`),
     menu_item = document.querySelectorAll(`.header .nav-bar .nav-list ul li a`),
     header = document.querySelector(`.header.container`),
-    contactForm = document.querySelector(`.contact-form`);
+    contactForm = document.querySelector(`.contact-form`),
+    fixedButtonDE = document.getElementById(`fixed-button-de`);
 
 let ul = document.getElementsByTagName(`ul`)[0],
     name = document.getElementById(`name`),
@@ -16,8 +17,8 @@ let ul = document.getElementsByTagName(`ul`)[0],
     error = document.getElementById(`error`),
     EN = document.getElementById(`en`),
     DE = document.getElementById(`de`),
-    hero_words = ['Facebook', 'Instagram', 'Meta', 'Google', 'TikTok', 'Pinterest'],
-    contact_us_button_DE = ['Kontaktiere uns jetzt!', 'Angebot sichern!'];
+    hero_words = [`Facebook`, `Instagram`, `Meta`, `Google`, `TikTok`, `Pinterest`],
+    contact_us_button_DE = [`Kontaktiere uns jetzt!`, `Angebot sichern`];
 
 if (window.location.href === `https://wedooso.com/` && navigator.language === `de` || window.location.href === `https://wedooso.com/` && navigator.language == `de-de` || window.location.href === `https://wedooso.com/` && navigator.language === `de-ch` || window.location.href === `https://wedooso.com/` && navigator.language === `de-at` || window.location.href === `https://wedooso.com/` && navigator.language === `de-de` || window.location.href === `https://wedooso.com/` && navigator.language === `de-lu` || window.location.href === `https://wedooso.com/` && navigator.language === `de-li`) {
     window.location.href = `https://wedooso.com/de/`
@@ -93,8 +94,10 @@ document.addEventListener(`scroll`, () => {
     let scroll_position = window.scrollY;
     if (scroll_position > 250 && window.location.href === `https://wedooso.com/` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/`) {
         header.style.backgroundColor = `var(--blue)`;
+        fixedButtonDE.style.bottom = `650px`;
     } else if (scroll_position < 250 && window.location.href === `https://wedooso.com/` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/`) {
         header.style.backgroundColor = `transparent`;
+        fixedButtonDE.style.bottom = `200px`;
     } else {
         header.style.backgroundColor = `var(--blue)`;
     }
