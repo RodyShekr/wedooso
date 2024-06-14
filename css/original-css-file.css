@@ -542,11 +542,12 @@ p {
 
 #fixed-button-de {
     position: fixed;
-    bottom: 200px;
+    bottom: 450px;
     right: -20px;
     width: 125px;
     height: 65px;
-    z-index: 999
+    z-index: 999;
+    transition: all 1s linear
 }
 
 .button {
