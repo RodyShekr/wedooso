@@ -1,10 +1,10 @@
 `use strict`;
 
 const hamburger = document.querySelector(`.header .nav-bar .nav-list .hamburger`),
-      mobile_menu = document.querySelector(`.header .nav-bar .nav-list ul`),
-      menu_item = document.querySelectorAll(`.header .nav-bar .nav-list ul li a`),
-      header = document.querySelector(`.header.container`),
-contactForm = document.querySelector(`.contact-form`);
+    mobile_menu = document.querySelector(`.header .nav-bar .nav-list ul`),
+    menu_item = document.querySelectorAll(`.header .nav-bar .nav-list ul li a`),
+    header = document.querySelector(`.header.container`),
+    contactForm = document.querySelector(`.contact-form`);
 
 let ul = document.getElementsByTagName(`ul`)[0],
     name = document.getElementById(`name`),
@@ -17,7 +17,7 @@ let ul = document.getElementsByTagName(`ul`)[0],
     EN = document.getElementById(`en`),
     DE = document.getElementById(`de`),
     hero_words = ['Facebook', 'Instagram', 'Meta', 'Google', 'TikTok', 'Pinterest'],
-contact_us_button_DE = ['Kontaktiere uns jetzt!', 'Angebot sichern!'];
+    contact_us_button_DE = ['Kontaktiere uns jetzt!', 'Angebot sichern!'];
 
 if (window.location.href === `https://wedooso.com/` && navigator.language === `de` || window.location.href === `https://wedooso.com/` && navigator.language == `de-de` || window.location.href === `https://wedooso.com/` && navigator.language === `de-ch` || window.location.href === `https://wedooso.com/` && navigator.language === `de-at` || window.location.href === `https://wedooso.com/` && navigator.language === `de-de` || window.location.href === `https://wedooso.com/` && navigator.language === `de-lu` || window.location.href === `https://wedooso.com/` && navigator.language === `de-li`) {
     window.location.href = `https://wedooso.com/de/`
@@ -29,39 +29,41 @@ if (window.location.href === `https://wedooso.com/` && navigator.browserLanguage
 
 /*change hero words*/
 textSequence(0);
+
 function textSequence(i) {
 
-  if (hero_words.length > i) {
-    setTimeout(function() {
-      document.getElementById("hero-sequence").innerHTML = hero_words[i];
-      textSequence(++i);
-    }, 1500); // 1 second (in milliseconds)
+    if (hero_words.length > i) {
+        setTimeout(function() {
+            document.getElementById("hero-sequence").innerHTML = hero_words[i];
+            textSequence(++i);
+        }, 1500); // 1 second (in milliseconds)
 
-  } else if (hero_words.length == i) { // Loop
-    textSequence(0);
-  }
+    } else if (hero_words.length == i) { // Loop
+        textSequence(0);
+    }
 
 }
 
 /*change contact us button DE*/
 textSequenceButton(0);
+
 function textSequenceButton(i) {
 
-  if (contact_us_button_DE.length > i) {
-    setTimeout(function() {
-      document.getElementById("button-sequence-de").innerHTML = contact_us_button_DE[i];
-      textSequenceButton(++i);
-    }, 2000); // 1 second (in milliseconds)
+    if (contact_us_button_DE.length > i) {
+        setTimeout(function() {
+            document.getElementById("button-sequence-de").innerHTML = contact_us_button_DE[i];
+            textSequenceButton(++i);
+        }, 2000); // 1 second (in milliseconds)
 
-  } else if (contact_us_button_DE.length == i) { // Loop
-    textSequenceButton(0);
-  }
+    } else if (contact_us_button_DE.length == i) { // Loop
+        textSequenceButton(0);
+    }
 
 }
 
 
 
-      
+
 hamburger.addEventListener(`click`, () => {
     hamburger.classList.toggle(`active`);
     mobile_menu.classList.toggle(`active`);
@@ -131,45 +133,46 @@ DE.addEventListener(`click`, (e) => {
 const form = document.getElementById("form");
 const result = document.getElementById("result");
 
-form.addEventListener("submit", function (e) {
-  const formData = new FormData(form);
-  e.preventDefault();
-  var object = {};
-  formData.forEach((value, key) => {
-    object[key] = value;
-  });
-  var json = JSON.stringify(object);
-  result.innerHTML = "Please wait...";
-
-  fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json"
-    },
-    body: json
-  })
-    .then(async (response) => {
-      let json = await response.json();
-      if (response.status == 200) {
-        result.innerHTML = json.message;
-        result.classList.remove("text-gray-500");
-        result.classList.add("text-green-500");
-      } else {
-        console.log(response);
-        result.innerHTML = json.message;
-        result.classList.remove("text-gray-500");
-        result.classList.add("text-red-500");
-      }
-    })
-    .catch((error) => {
-      console.log(error);
-      result.innerHTML = "Something went wrong!";
-    })
-    .then(function () {
-      form.reset();
-      setTimeout(() => {
-        result.style.display = "none";
-      }, 5000);
+form.addEventListener("submit", function(e) {
+    const formData = new FormData(form);
+    e.preventDefault();
+    var object = {};
+    formData.forEach((value, key) => {
+        object[key] = value;
     });
+    var json = JSON.stringify(object);
+    result.innerHTML = "Please wait...";
+
+    fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        })
+        .then(async(response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = json.message;
+                result.classList.remove("text-gray-500");
+                result.classList.add("text-green-500");
+                gtag_report_conversion();
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+                result.classList.remove("text-gray-500");
+                result.classList.add("text-red-500");
+            }
+        })
+        .catch((error) => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                result.style.display = "none";
+            }, 5000);
+        });
 });
