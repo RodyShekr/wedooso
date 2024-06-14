@@ -2,8 +2,41 @@
 <html lang="de">
 
 <head>
+    <!-- Google Ads -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11319674940"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11319674940');
+    </script>
+    <!-- Event snippet for submit-lead-form conversion page
+        In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function() {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-11319674940/4UrNCMqD-K8ZELyQ0pUq',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
+
+    <!-- End Google Ads -->
     <!-- Cookie Banner -->
-    <script async defer type="text/javascript" src="https://app.termly.io/resource-blocker/e021878a-7abf-481b-89e8-d10a0062e685?autoBlock=on"></script>
+    <!-- <script async defer type="text/javascript" src="https://app.termly.io/resource-blocker/e021878a-7abf-481b-89e8-d10a0062e685?autoBlock=on"></script> -->
     <!-- <a href="#" onclick="window.displayPreferenceModal();return false;" id="termly-consent-preferences">Consent Preferences</a> -->
 
     <meta charset="UTF-8">
@@ -24,7 +57,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/touch-icon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/touch-icon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/touch-icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/touch-icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/touch-icon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/touch-icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/touch-icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/touch-icon/favicon-16x16.png">
@@ -35,10 +68,10 @@
 
     <link rel="canonical" href="https://wedooso.com/de/">
 
-    
+
     <!-- HTML Meta Tags -->
     <title>Bekomme mehr Kunden und Umsatz durch Werbung und SEO</title>
-    <meta name="description" content="Als Online-Marketing-Agentur erhöhen wir deine Umsätze durch Werbung und SEO. Jetzt mehr über uns und unsere Leistungen erfahren. Kostenlose Beratung!"/>
+    <meta name="description" content="Als Online-Marketing-Agentur erhöhen wir deine Umsätze durch Werbung und SEO. Jetzt mehr über uns und unsere Leistungen erfahren. Kostenlose Beratung!" />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://wedooso.com/de/">
@@ -55,20 +88,34 @@
     <meta name="twitter:description" content="Als Online-Marketing-Agentur erhöhen wir deine Umsätze durch Werbung und SEO. Jetzt mehr über uns und unsere Leistungen erfahren. Kostenlose Beratung!">
     <meta name="twitter:image" content="https://wedooso.com/images/shayan-logo-big.ico">
 
-    <!-- Meta Tags Generated via https://www.opengraph.xyz --> 
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 </head>
 
 <!-- Google tag (gtag.js) -->
 <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-C3GCPEWG11"></script>
 <script async defer>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-C3GCPEWG11');
 </script>
 
 <body>
+    <div id="sale-box">
+        <a href="#contact">
+            <h1>Den ersten 5 Unternehmen bieten wir unsere Leistungen <u>kostenlos</u> an.</h1>
+            <h1>Kontaktiere uns jetzt!</h1>
+        </a>
+    </div>
+    <div class="fixed">
+        <a href="#contact" class="button">
+            <div class="buttonDiv" id="button-sequence-de"></div>
+        </a>
+    </div>
     <!--Header-->
     <section id="header">
         <div class="header container">
@@ -83,10 +130,10 @@
                         <div class="bar"></div>
                     </div>
                     <ul>
-                        <li><a class="a-nav" href="#hero" data-after="Home">Home</a></li>
+                        <!-- <li><a class="a-nav" href="#hero" data-after="Home">Home</a></li> -->
                         <li><a class="a-nav" href="#content" data-after="WeDooSo">WeDooSo</a></li>
                         <li><a class="a-nav" href="#services" data-after="Leistungen">Leistungen</a></li>
-                        <li><a class="a-nav" href="#case-study" data-after="Resultate">Resultate</a></li>
+                        <li><a class="a-nav" href="#case-study" data-after="Resultate">11,93X ROAS</a></li>
                         <li><a class="a-nav" href="#about" data-after="Über Uns">Über Uns</a></li>
                         <li><a class="a-nav" href="#contact" data-after="Kontakt">Kontakt</a></li>
                     </ul>
@@ -102,7 +149,7 @@
         <div class="hero container">
             <div>
                 <h2>Mehr Kunden<span></span></h2>
-                <h2>Mit unseren Leistungen!<span></span></h2>
+                <h2>Mit <u id="hero-sequence"></u><span></span></h2>
             </div>
         </div>
     </section>
@@ -114,13 +161,9 @@
             <div class="content-top">
                 <h1 class="title">Werbe und SEO Agentur</h1>
                 <p>
-                    Verwandele deine E-Commerce-Marke mit WeDooSo, der Werbe- und SEO-Agentur.
-                    Steiger deinen Umsatz mit unseren maßgeschneiderten Dienstleistungen.
-                    Erlebe einen Zuwachs an Kunden und Käufen.
-                    Worauf wartest du?
-                    Hebe deine Marke noch heute hervor!<br><br>
-
-                    Hier sind unsere Dienstleistungen:
+                    Wir sind eine Marketingagentur, die E-Commerce-Marken dabei hilft, über digitale Marketingkanäle erfolgreich zu sein. Social-Media-Ads, Google-Ads und Suchmaschinenoptimierung(SEO) sind die Dienstleistungen, auf die wir uns spezialisiert haben. Unser
+                    Ziel ist es, unseren Kunden zu zeigen, wie wir das, was sie großartig macht, in etwas umwandeln können, das ihre Reichweite vergrößert und ihnen beim Wachstum hilft.
+                    <br><br> Hier sind unsere Dienstleistungen:
                 </p>
             </div>
 
@@ -151,13 +194,11 @@
                 <div class="services-item">
                     <div class="services-info">
                         <strong>Werbung</strong>
-                        <h3>Google, Meta, und TikTok</h3>
+                        <h3>Google, Meta und Pinterest</h3>
                         <p>
-                            Für Shopify- und Shopware-Shops wie deine öffnet die Investition in Werbung über Google-, Meta- und TikTok-Ads die Tür zu einer Welt gezielter Sichtbarkeit.
-                            Es geht nicht nur darum, potenzielle Kunden zu erreichen; es geht darum, die Richtigen zu erreichen.
-                            Mit maßgeschneiderten Kampagnen auf diesen Plattformen kannst du deine Online-Präsenz maximieren, den Traffic steigern und Klicks in Verkäufe umwandeln, um sicherzustellen, dass deine Produkte auf dem digitalen Markt hervorstechen.
-                            <br><br>
-                            Entdecke hier die Vorteile von der Werbung:
+                            Für Shops wie deine öffnet die Investition in Werbung über Google-, Meta-, Pinterest- und TikTok-Ads die Tür zu einer Welt gezielter Sichtbarkeit. Es geht nicht nur darum, potenzielle Kunden zu erreichen; es geht darum, die Richtigen zu erreichen. Mit
+                            maßgeschneiderten Kampagnen auf diesen Plattformen kannst du deine Online-Präsenz maximieren, den Traffic steigern und Klicks in Verkäufe umwandeln, um sicherzustellen, dass deine Produkte auf dem digitalen Markt hervorstechen.
+                            <br><br> Entdecke hier die Vorteile von der Werbung:
                         </p>
                         <div class="benefits">
                             <h3><span>Sofortige Ergebnisse</span></h3>
@@ -166,7 +207,7 @@
                             <h3><span>Eine Fülle von Dateneinblicken</span></h3>
                         </div>
 
-                        <a href="https://wedooso.com/de/blog/paid-ads/" rel="noopener noreferrer" class="cta">Blog</a>
+                        <!-- <a href="https://wedooso.com/de/blog/paid-ads/" rel="noopener noreferrer" class="cta">Blog</a> -->
 
                     </div>
                     <div class="services-img">
@@ -180,12 +221,9 @@
                         <strong>SEO</strong>
                         <h3>On-Page und Technical SEO</h3>
                         <p>
-                            SEO ist eines der wichtigsten Marketingmaßnahmen für Shopify- und Shopware-Shops, da es mehr Zielgruppen-Traffic beeinflusst und Glaubwürdigkeit aufbaut.
-                            Durch Investitionen in SEO können Unternehmen ihre Online-Präsenz verbessern und die Nr. 1-Position in Suchmaschinen erreichen.
-                            Sie bieten langfristige Vorteile und ermöglichen es dir, die Konkurrenz zu übertreffen.
-                            Wir haben Experten, die auf SEO-Marketing spezialisiert sind und wissen, wie sie dir dabei helfen können, die Bekanntheit deiner Suchmaschinenpräsenz zu verbessern.
-
-                            Entdecke hier die Vorteile von SEO:
+                            SEO ist eines der wichtigsten Marketingmaßnahmen für Shops, da es mehr Zielgruppen-Traffic beeinflusst und Glaubwürdigkeit aufbaut. Durch Investitionen in SEO können Unternehmen ihre Online-Präsenz verbessern und die Nr. 1-Position in Suchmaschinen erreichen.
+                            Sie bieten langfristige Vorteile und ermöglichen es dir, die Konkurrenz zu übertreffen. Wir haben Experten, die auf SEO-Marketing spezialisiert sind und wissen, wie sie dir dabei helfen können, die Bekanntheit deiner Suchmaschinenpräsenz
+                            zu verbessern. Entdecke hier die Vorteile von SEO:
                         </p>
                         <div class="benefits">
                             <h3><span>Langfristig kostengünstig</span></h3>
@@ -194,7 +232,7 @@
                             <h3><span>Organische Ergebnisse werden 24/7 angezeigt</span></h3>
                         </div>
 
-                        <a href="https://wedooso.com/de/blog/seo/" rel="noopener noreferrer" class="cta">Blog</a>
+                        <!-- <a href="https://wedooso.com/de/blog/seo/" rel="noopener noreferrer" class="cta">Blog</a> -->
                     </div>
                     <div class="services-img">
                         <img src="/images/seo.svg" alt="SEO Image">
@@ -210,19 +248,99 @@
 
     <!-- case study -->
     <section id="case-study">
-        <div class="content container">
-            <div class="content-top">
-                <h1 class="title">11,93 ROAS</h1>
+        <div class="contact container">
+            <div>
+                <h2 class="title">11,93 ROAS</h2>
                 <p>
-                    Hier ist ein Screenshot der Meta Ads-Ergebnisse (Facebook & Instagram) eines unserer Kunden. Wir müssen nichts erklären. Die Zahlen sprechen für sich:
-                    <br><br>
-                    <img src="/images/case-study-1-march-watermark.png" alt="case study of our client in march DE">
-                    <!-- <a href="/images/case-study-1-march-watermark.png" class="cta">Click to see the entire image</a> -->
+                    Hier sind die Ergebnisse der Meta-Ads (Facebook & Insragram) eines unserer Kunden. Sie haben ihre Produkte über Shopify verkauft. Wir müssen nichts erklären. Die Zahlen sprechen für sich:
                 </p>
             </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h2>Werbeausgaben</h2>
+                        <h3>$5.138,18</h3>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h2>Verkäufe</h2>
+                        <h3>$61.281,54</h3>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h2>ROAS</h2>
+                        <h3>11,93</h3>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br>
+            <div>
+                <h2 class="title">Facebook Ads</h2>
+                <p>
+                    Facebook und Instagram
+                </p>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h2>Werbeausgaben</h2>
+                        <h3>$42.132,56</h3>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h2>Verkäufe</h2>
+                        <h3>$271.753,02</h3>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h2>ROAS</h2>
+                        <h3>6,45</h3>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br>
+            <div>
+                <h2 class="title">Pinterest Ads</h2>
+                <p>
+                    Pinterest
+                </p>
+            </div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h2>Werbeausgaben</h2>
+                        <h3>$1.241,00</h3>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h2>Verkäufe</h2>
+                        <h3>$9.955,86</h3>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-info">
+                        <h2>ROAS</h2>
+                        <h3>8,02</h3>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-    <!-- End case study -->
+    <!-- end case study -->
 
     <!-- About -->
     <section id="about">
@@ -238,15 +356,11 @@
                 <br>
                 <br>
                 <p>
-                    〟Mein Name ist Rody Shekr, ich bin der Gründer der WeDooSo-Agentur und freue mich, dich hier begrüßen zu dürfen.
-                    Als Gründer möchte ich einen Einblick hinter die Kulissen liefern und näher bringen, wie ich dazu gekommen bin, die Agentur zu gründen und was meine Leidenschaft ist.
-                    <br><br>
-                    Schon in jungen Jahren wurde mir klar, ich möchte meinen eigenen Weg einschlagen und Unternehmer werden.
-                    Bereits damals reizte mich die Geschäftswelt und besonders die digitale Welt sehr und mir wurde schnell klar, eines Tages werde ich dazu gehören.
-                    <br><br>
-                    Durch das gesammelte Wissen über digitales Marketing, war ich vertraut damit, wie man soziale Medien im 21. Jahrhundert für den unternehmerischen Erfolg einsetzen kann.
-                    Ich wusste somit, ich muss was ändern, denn ich sah, dass eben viele Unternehmen dieses Wissen darüber, wie man z. B. effektiv Werbung schaltet, überhaupt nicht haben.
-                    Das erlernte Wissen wende ich an, um dadurch anderen Unternehmen zu helfen und so kam letztendlich WeDooSo ins Leben.
+                    „Mein Name ist Rody, ich bin der Gründer der WeDooSo-Agentur und freue mich, dich hier begrüßen zu dürfen. Als Gründer möchte ich einen Einblick hinter die Kulissen liefern und näherbringen, wie ich dazu gekommen bin, die Agentur zu gründen, und was meine
+                    Leidenschaft ist.
+                    <br><br> Durch das gesammelte Wissen über digitales Marketing war ich damit vertraut, wie man soziale Medien im 21. Jahrhundert für den unternehmerischen Erfolg einsetzen kann. Ich wusste somit, ich muss etwas ändern, denn ich sah,
+                    dass eben viele Unternehmen dieses Wissen darüber, wie man z. B. effektiv Werbung schaltet oder dafür überhaupt die Zeit nicht haben. Das erlernte Wissen wende ich an, um dadurch anderen Unternehmen zu helfen, Geld und Zeit zu sparen.
+                    So kam letztendlich WeDooSo ins Leben.”
                     <!-- Heute helfen wir vielen Unternehmen auf der ganzen Welt verteilt und es werden immer mehr. -->
                 </p>
             </div>
@@ -261,15 +375,15 @@
                 <h2 class="title">Kontaktiere uns!</h2>
             </div>
             <div class="contact-items">
-                
-                <!-- <a href="tel:+491739145524" rel="noopener noreferrer">
+
+                <!-- <a href="tel:+4910000000" rel="noopener noreferrer">
                     <div class="contact-item">
                         <div class="icon">
                             <img src="https://img.icons8.com/cute-clipart/64/000000/phone.png" alt="Phone icon" />
                         </div>
                         <div class="contact-info">
                             <h2>Telefon</h2>
-                            <h3>+491739145524</h3>
+                            <h3>+4910000000</h3>
                         </div>
                     </div>
                 </a> -->
@@ -286,20 +400,58 @@
                     </div>
                 </a>
 
-                <!-- <a href="https://goo.gl/maps/q3DdmQ8nBESfYzr76" rel="noopener noreferrer" target="_blank">
-                    <div class="contact-item">
-                        <div class="icon">
-                            <img src="https://img.icons8.com/color/100/000000/marker--v1.png" alt="Adress icon" />
-                        </div>
-                        <div class="contact-info">
-                            <h2>Adresse</h2>
-                            <h3>Bertha-Benz-Karree 22 <br> Köln</h3>
+                <div class="wedooso-contact-form flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+                    <div class="new-form-container mx-auto">
+                        <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+                            <div class="text-center">
+                                <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+                                    Kontaktiere uns
+                                </h1>
+                                <p class="text-gray-400 dark:text-gray-400">
+                                    Fülle das untenstehende Formular aus, um das Angebot zu erhalten.
+                                    <!-- Fülle das untenstehende Formular aus, um uns eine Nachricht zu senden. -->
+                                </p>
+                            </div>
+                            <div class="m-7">
+                                <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                                    <input type="hidden" name="access_key" value="7cf1ae87-ce11-4b55-9944-7da24b3311e3" />
+                                    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+                                    <div class="mb-6">
+                                        <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Name</label>
+                                        <input type="text" name="name" id="name" placeholder="Max Mustermann" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                                        />
+                                    </div>
+                                    <div class="mb-6">
+                                        <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Addresse</label>
+                                        <input type="email" name="email" id="email" placeholder="max@muster.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                                        />
+                                    </div>
+                                    <div class="mb-6">
+                                        <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Telefonnummer</label>
+                                        <input type="text" name="phone" id="phone" placeholder="+49 155 55555555" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                                        />
+                                    </div>
+                                    <div class="mb-6">
+                                        <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Deine Nachricht</label>
+
+                                        <textarea rows="5" name="message" id="message" placeholder="z.B. Wir brauchen Unterstützung mit Facebook und Instagram Ads." required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"></textarea>
+                                    </div>
+                                    <div class="mb-6">
+                                        <button onclick="gtag_report_conversion();" type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                                Senden
+                              </button>
+                                    </div>
+                                    <p class="text-base text-center text-gray-400" id="result"></p>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </a> -->
+                </div>
 
             </div>
-        </div>        
+        </div>
     </section>
     <!-- End contact-->
 
@@ -311,8 +463,8 @@
             <input type="text" id="subject" placeholder="Betreff" required><br>
             <textarea id="message" placeholder="Nachricht" cols="30" rows="10" required></textarea><br>
             <button type="submit" class="submit" >Senden</button> -->
-            <!-- loading icon -->
-            <!-- <div id="loading-spinner-gear"><div class="load">
+    <!-- loading icon -->
+    <!-- <div id="loading-spinner-gear"><div class="load">
                 <div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             </div></div>
             <p id="success">Email gesendet!</p>
@@ -356,7 +508,7 @@
         <a href="https://wedooso.com/de/impressum" rel="noopener noreferrer" class="footer-links" id="impressum">Impressum</a>
     </section>
     <!-- End Footer-->
-    
+
     <script type="text/javascript" src="/js/script.js"></script>
     <script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=552608f7"></script>
     <!-- <script type="text/javascript" src="/server.js"></script> -->
