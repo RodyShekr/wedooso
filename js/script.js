@@ -35,6 +35,7 @@ function textSequence(i) {
 
     if (hero_words.length > i) {
         setTimeout(function() {
+            document.getElementById("hero-sequence").innerHTML = ``;
             document.getElementById("hero-sequence").innerHTML = hero_words[i];
             textSequence(++i);
         }, 1500); // 1 second (in milliseconds)
@@ -52,6 +53,7 @@ function textSequenceButtonDE(i) {
 
     if (contactUsButtonDE.length > i) {
         setTimeout(function() {
+            document.getElementById(`button-sequence-de`).innerHTML = ``;
             document.getElementById(`button-sequence-de`).innerHTML = contactUsButtonDE[i];
             textSequenceButtonDE(++i);
         }, 2000); // 1 second (in milliseconds)
@@ -69,6 +71,7 @@ function textSequenceButtonEN(i) {
 
     if (contactUsButtonEN.length > i) {
         setTimeout(function() {
+            document.getElementById(`button-sequence-en`).innerHTML = ``;
             document.getElementById(`button-sequence-en`).innerHTML = contactUsButtonEN[i];
             textSequenceButtonEN(++i);
         }, 2000); // 1 second (in milliseconds)
