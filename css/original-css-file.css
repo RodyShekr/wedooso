@@ -92,18 +92,18 @@ html {
 }
 
 #sale-box {
-    height: 140px;
+    height: 110px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #9acd32;
+    background-color: var(--blue);
     opacity: 1;
     z-index: 100
 }
 
 #sale-box h1 {
     margin: 1rem;
-    color: #000
+    color: #ffffff
 }
 
 #lang {
@@ -542,7 +542,7 @@ p {
 
 #fixed-button-de, #fixed-button-en {
     position: fixed;
-    bottom: 450px;
+    bottom: 500px;
     right: -20px;
     width: 125px;
     height: 65px;
@@ -1229,7 +1229,7 @@ textarea {
 
 @media only screen and (min-width:768px) {
     #sale-box {
-        height: 115px
+        height: 110px
     }
     .cta {
         font-size: 2.5rem;

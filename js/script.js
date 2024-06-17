@@ -17,7 +17,7 @@ let ul = document.getElementsByTagName(`ul`)[0],
     EN = document.getElementById(`en`),
     DE = document.getElementById(`de`),
     hero_words = [`Facebook`, `Instagram`, `Meta`, `Google`, `TikTok`, `Pinterest`],
-    contactUsButtonDE = [`Kontaktiere uns jetzt!`, `Fülle das Formular!`, `Angebot sichern!`],
+    contactUsButtonDE = [`Kontaktiere uns jetzt!`, `Fülle das Formular!`, `Angebot sichern!`, `Kostenlose Einschätzung!`],
 contactUsButtonEN = [`Contact us now!`, `Get in touch now!`, `Reach out to us!`, `Fill out the form!`];
 
 if (window.location.href === `https://wedooso.com/` && navigator.language === `de` || window.location.href === `https://wedooso.com/` && navigator.language == `de-de` || window.location.href === `https://wedooso.com/` && navigator.language === `de-ch` || window.location.href === `https://wedooso.com/` && navigator.language === `de-at` || window.location.href === `https://wedooso.com/` && navigator.language === `de-de` || window.location.href === `https://wedooso.com/` && navigator.language === `de-lu` || window.location.href === `https://wedooso.com/` && navigator.language === `de-li`) {
@@ -114,16 +114,16 @@ document.addEventListener(`scroll`, () => {
     let scroll_position = window.scrollY;
     if (scroll_position > 250 && window.location.href === `https://wedooso.com/` || scroll_position > 250 && window.location.href === `https://wedooso.com/#hero` || scroll_position > 250 && window.location.href === `https://wedooso.com/#content` || scroll_position > 250 && window.location.href === `https://wedooso.com/#ads` || scroll_position > 250 && window.location.href === `https://wedooso.com/#seo` || scroll_position > 250 && window.location.href === `https://wedooso.com/#services` || scroll_position > 250 && window.location.href === `https://wedooso.com/#case-study` || scroll_position > 250 && window.location.href === `https://wedooso.com/#about`|| scroll_position > 250 && window.location.href === `https://wedooso.com/#contact` || scroll_position > 250 && window.location.href === `https://wedooso.com/#wedooso-contact-form-en`) {
         header.style.backgroundColor = `var(--blue)`;
-        document.getElementById(`fixed-button-en`).style.bottom = `150px`;
+        document.getElementById(`fixed-button-en`).style.bottom = `120px`;
     } else if (scroll_position < 250 && window.location.href === `https://wedooso.com/` || scroll_position < 250 && window.location.href === `https://wedooso.com/#hero` || scroll_position < 250 && window.location.href === `https://wedooso.com/#content` || scroll_position < 250 && window.location.href === `https://wedooso.com/#ads` || scroll_position < 250 && window.location.href === `https://wedooso.com/#seo` || scroll_position < 250 && window.location.href === `https://wedooso.com/#services` || scroll_position < 250 && window.location.href === `https://wedooso.com/#case-study` || scroll_position < 250 && window.location.href === `https://wedooso.com/#about`|| scroll_position < 250 && window.location.href === `https://wedooso.com/#contact` || scroll_position < 250 && window.location.href === `https://wedooso.com/#wedooso-contact-form-en`) {
         header.style.backgroundColor = `transparent`;
-        document.getElementById(`fixed-button-en`).style.bottom = `450px`;
+        document.getElementById(`fixed-button-en`).style.bottom = `500px`;
     } else if (scroll_position > 250 && window.location.href === `https://wedooso.com/de/` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#hero` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#content` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#ads` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#seo` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#services` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#case-study` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#about`|| scroll_position > 250 && window.location.href === `https://wedooso.com/de/#contact` || scroll_position > 250 && window.location.href === `https://wedooso.com/de/#wedooso-contact-form-de`) {
         header.style.backgroundColor = `var(--blue)`;
-        document.getElementById(`fixed-button-de`).style.bottom = `150px`;
+        document.getElementById(`fixed-button-de`).style.bottom = `120px`;
     } else if (scroll_position < 250 && window.location.href === `https://wedooso.com/de/` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#hero` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#content` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#ads` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#seo` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#services` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#case-study` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#about`|| scroll_position < 250 && window.location.href === `https://wedooso.com/de/#contact` || scroll_position < 250 && window.location.href === `https://wedooso.com/de/#wedooso-contact-form-de`) {
         header.style.backgroundColor = `transparent`;
-        document.getElementById(`fixed-button-de`).style.bottom = `450px`;
+        document.getElementById(`fixed-button-de`).style.bottom = `500px`;
     } else {
         header.style.backgroundColor = `var(--blue)`;
     }
