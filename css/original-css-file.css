@@ -934,6 +934,10 @@ th {
     margin-bottom: 5px
 }
 
+#case-study p {
+    margin: 2rem;
+}
+
 .form-container {
     font-family: Poppins, sans-serif;
     position: relative;
