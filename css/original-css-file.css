@@ -34,6 +34,10 @@ a {
     text-decoration: none
 }
 
+.capitalize {
+    text-transform: capitalize
+}
+
 #case-study .contact-item:hover,
 #contact .contact-item:hover,
 #skills .skill-item:hover {
@@ -1133,8 +1137,7 @@ textarea {
 
 #impressum-content {
     margin: 10rem;
-    padding: 1rem;
-    background-color: var(--blue)
+    padding: 1rem
 }
 
 @keyframes load-keyframes {
