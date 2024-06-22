@@ -49,7 +49,7 @@ a {
 #case-study .content-top,
 #contact-wedooso-for-more,
 #content .content,
-#sale-box h1,
+#sale-box h3,
 #skills .skill-item .icon,
 #skills .skill-item .skill-info,
 .blog-content-section .blog-video,
@@ -105,7 +105,8 @@ html {
     z-index: 100
 }
 
-#sale-box h1 {
+#sale-box h3 {
+    font-size: 24px;
     margin: 1rem;
     color: #ffffff
 }
