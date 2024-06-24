@@ -111,6 +111,37 @@ html {
     color: #ffffff
 }
 
+.qualification {
+    margin-top: 3rem
+}
+
+.qualification input {
+    width: auto!important;
+    margin: 0 2rem 0 0;
+    position: relative;
+    top: -5px;
+    zoom: 1;
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    -moz-transform: scale(2);
+    transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -moz-transform-origin: 0 0
+}
+
+.qualification p {
+    width: auto;
+    margin: 1rem 1rem 1rem 0
+}
+
+.qualification strong {
+    font-size: 16px
+}
+
 #lang {
     font-size: 24px;
     position: absolute;
