@@ -4,4 +4,5 @@ Disallow: /cgi-bin/
 Disallow: /.env
 Disallow: /impressum
 Disallow: /de/impressum
+Disallow: /.well-known/apple-developer-merchantid-domain-association
 Sitemap: https://wedooso.com/sitemap.xml
