@@ -16,7 +16,7 @@ let ul = document.getElementsByTagName(`ul`)[0],
     error = document.getElementById(`error`),
     EN = document.getElementById(`en`),
     DE = document.getElementById(`de`),
-    hero_words = [`Facebook`, `Instagram`, `Meta`, `Google`, `TikTok`, `Pinterest`],
+    hero_words = [`Facebook`, `Instagram`, `Meta`, `Google`, `Pinterest`],
     contactUsButtonDE = [`Kontaktiere uns jetzt!`, `Fülle das Formular!`, `Angebot sichern!`, `Kostenlose Einschätzung!`],
 contactUsButtonEN = [`Contact us now!`, `Get in touch now!`, `Reach out to us!`, `Fill out the form!`];
 
