@@ -401,7 +401,7 @@ p {
 }
 
 #hero {
-    background-image: url(../images/hero.webp);
+    background-image: url(../images/hero1.webp);
     background-size: cover;
     background-position: left;
     position: relative;
@@ -798,7 +798,7 @@ th {
     flex-direction: column-reverse;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 150px 20px 50px
+    padding: 0px 20px 50px 20px
 }
 
 #about .col-left {
@@ -1332,7 +1332,7 @@ textarea {
     #case-study .contact,
     #contact .contact {
         flex-direction: column;
-        padding: 100px 0;
+        padding: 100px 0 0 0;
         align-items: center;
         justify-content: center;
         min-height: 20vh
@@ -1415,6 +1415,9 @@ textarea {
     }
     #lang {
         right: 55px
+    }
+    #hero {
+        background-image: url(../images/hero1.webp)
     }
     #hero .hero {
         max-width: 1200px;
